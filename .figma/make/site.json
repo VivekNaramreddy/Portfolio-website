@@ -1,0 +1,10 @@
+{
+  "description": "Showcases a professional portfolio blending marketing, analytics, and tech projects to highlight skills and practical software solutions for recruiters.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

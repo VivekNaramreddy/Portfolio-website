@@ -23,15 +23,14 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[#7a7a74] leading-relaxed max-w-2xl">
               <p>
-                Currently completing my MBA in Marketing & Digital Marketing, I spend my time at the
-                intersection of strategy and execution — figuring out what the data says, then building
-                tools to act on it faster. I use AI-assisted development not as a trend but as a practical
-                lever for making ambitious ideas achievable as a solo builder.
+                I’m an MBA graduate in Marketing & Digital Marketing from the University of New Haven,
+                working at the intersection of strategy, analytics, technology, and automation. I use data
+                to understand problems, then turn those insights into practical projects and tools.
               </p>
               <p>
-                My work spans audience analytics, marketing automation, social-media strategy, and software
-                tools that solve genuine friction points. I care about making things that are actually useful,
-                not just things that look good in a slide deck.
+                My work spans digital marketing strategy, audience research, competitive analysis, workflow
+                automation, and AI-assisted product building. I’m most interested in work where business
+                thinking and technology come together to create something genuinely useful.
               </p>
             </div>
           </div>
@@ -40,8 +39,12 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {[
               { label: 'Degree', value: 'MBA', sub: 'Marketing & Digital Marketing' },
-              { label: 'Focus', value: 'Analytics + AI', sub: 'Data-driven decision making' },
-              { label: 'Approach', value: 'Builder', sub: 'Strategy through execution' },
+              {
+                label: 'Focus',
+                value: 'Marketing + Analytics',
+                sub: 'Strategy, research, and data-driven decision making',
+              },
+              { label: 'Approach', value: 'Builder Mindset', sub: 'Understand, test, build, refine' },
             ].map(({ label, value, sub }) => (
               <div key={label} className="border border-[#1e1e1c] rounded-2xl p-5 space-y-1 hover:border-[#2e2e2b] transition-colors duration-300">
                 <p

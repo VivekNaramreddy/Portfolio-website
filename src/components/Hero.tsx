@@ -15,26 +15,21 @@ export default function Hero() {
               className="font-mono-label text-xs tracking-[0.2em] text-[#d4955a] uppercase"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
-              MBA · Marketing · Technology
+              MBA · MARKETING · ANALYTICS · TECHNOLOGY
             </p>
           </div>
           <h1
             className="font-display text-5xl md:text-6xl lg:text-7xl leading-[1.05] font-light text-[#ede9e3]"
             style={{ fontFamily: "'Fraunces', Georgia, serif", letterSpacing: '-0.02em' }}
           >
-            Marketing,
+            Marketing, Analytics &
             <br />
-            Technology
-            <span className="text-[#d4955a]"> &</span>
+            Technology - Built Into
             <br />
-            <em className="not-italic">Ideas</em> — Built
-            <br />
-            Into Real Projects.
+            <em className="not-italic">Real Projects</em> 
           </h1>
           <p className="text-base md:text-lg text-[#7a7a74] leading-relaxed max-w-lg font-light">
-            I combine marketing strategy, analytics, technology, and AI-assisted
-            development to solve practical problems — from automating job searches
-            to building audience intelligence tools.
+            I combine marketing strategy, research, analytics, automation, and AI-assisted development to turn ideas into practical projects — from digital strategy and audience intelligence to workflow automation tools.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <a

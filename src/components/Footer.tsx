@@ -22,7 +22,7 @@ export default function Footer() {
             className="text-xs text-[#3a3a36] hover:text-[#7a7a74] transition-colors duration-200 tracking-wide"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
-            vivek@example.com
+            viveknaramreddy@gmail.com
           </a>
         </div>
       </div>

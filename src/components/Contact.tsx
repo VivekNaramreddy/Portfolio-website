@@ -60,7 +60,7 @@ export default function Contact() {
             className="text-sm text-[#4a4a46] tracking-wide"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
-            vivek@example.com
+            viveknaramreddy@gmail.com
           </p>
         </div>
       </div>

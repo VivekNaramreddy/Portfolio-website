@@ -13,7 +13,7 @@ const projectGithubUrls: {
   marketingIntelligence: string | null
 } = {
   jobApplicationAutomation: "https://github.com/VivekNaramreddy/AI-Job-Application-Assistant",
-  marketingIntelligence: "https://github.com",
+  marketingIntelligence: "https://github.com/VivekNaramreddy/Marketing-Intelligence",
 }
 
 function Tag({ label, light = false }: { label: string light?: boolean }) {

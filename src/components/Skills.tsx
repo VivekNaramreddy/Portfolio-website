@@ -65,7 +65,7 @@ export default function Skills() {
           {/* Header */}
           <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-6">
             <p
-              className="text-xs tracking-[0.2em] text-[#9a9a94] uppercase lg:pt-1.5"
+              className="text-sm leading-4 tracking-[0.2em] text-[#6a6a64] uppercase lg:pt-1.5"
               style={{ fontFamily: "'JetBrains Mono', monospace" }}
             >
               Skills

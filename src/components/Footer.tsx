@@ -11,10 +11,10 @@ export default function Footer() {
           © 2026 Vivek Naramreddy
         </p>
         <div className="flex items-center gap-5">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-[#6a6a64] hover:text-[#7a7a74] transition-colors duration-200">
+          <a href="https://github.com/VivekNaramreddy" target="_blank" rel="noopener noreferrer" className="text-[#6a6a64] hover:text-[#7a7a74] transition-colors duration-200">
             <IconGithub size={16} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-[#6a6a64] hover:text-[#7a7a74] transition-colors duration-200">
+          <a href="https://www.linkedin.com/in/vivek-vardhan-reddy-naramreddy-954347285/" target="_blank" rel="noopener noreferrer" className="text-[#6a6a64] hover:text-[#7a7a74] transition-colors duration-200">
             <IconLinkedIn size={16} />
           </a>
           <a

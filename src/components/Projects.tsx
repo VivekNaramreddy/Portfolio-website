@@ -1,3 +1,4 @@
+import { IconArrow, IconGithub } from "./Icons"
 import {
   AnalyticsMockup,
   GMStrategyMockup,
@@ -5,6 +6,15 @@ import {
   NHSOMockup,
   PortfolioStudyMockup,
 } from "./ProjectMockups"
+
+// Original GitHub homepage links; replace with project repository URLs when available.
+const projectGithubUrls: {
+  jobApplicationAutomation: string | null
+  marketingIntelligence: string | null
+} = {
+  jobApplicationAutomation: "https://github.com/VivekNaramreddy/AI-Job-Application-Assistant",
+  marketingIntelligence: "https://github.com",
+}
 
 function Tag({ label, light = false }: { label: string light?: boolean }) {
   return (
@@ -59,7 +69,7 @@ export default function Projects() {
         {/* ── Section header */}
         <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-6">
           <p
-            className="text-xs tracking-[0.2em] text-[#4a4a46] uppercase lg:pt-1.5"
+            className="text-sm leading-4 tracking-[0.2em] text-[#8a8a82] uppercase lg:pt-1.5"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             Projects
@@ -156,6 +166,19 @@ export default function Projects() {
                 </div>
               </div>
 
+              {projectGithubUrls.jobApplicationAutomation && (
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href={projectGithubUrls.jobApplicationAutomation}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#2e2e2b] text-[#7a7a74] text-sm tracking-wide hover:border-[#4a4a46] hover:text-[#ede9e3] transition-all duration-200"
+                  >
+                    <IconGithub size={14} />
+                    GitHub
+                  </a>
+                </div>
+              )}
             </div>
 
             {/* Right: dashboard mockup */}
@@ -253,6 +276,19 @@ export default function Projects() {
                 ))}
               </div>
 
+              {projectGithubUrls.marketingIntelligence && (
+                <div className="flex items-center gap-3 mt-auto">
+                  <a
+                    href={projectGithubUrls.marketingIntelligence}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm text-[#4a4a46] hover:text-[#ede9e3] transition-colors duration-200"
+                  >
+                    <IconGithub size={14} />
+                    GitHub
+                  </a>
+                </div>
+              )}
             </div>
           </div>
 
@@ -331,6 +367,19 @@ export default function Projects() {
                 ))}
               </div>
 
+              <div className="flex items-center gap-3 mt-auto">
+                <a
+                  href="https://drive.google.com/drive/folders/1AM2_3pdcAchWldWZko8drh2uX6XFlKQZ?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-[#ede9e3] hover:text-[#a896c8] transition-colors duration-200 group/btn"
+                >
+                  View Case Study
+                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
+                    <IconArrow />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -409,6 +458,19 @@ export default function Projects() {
                 ))}
               </div>
 
+              <div className="flex items-center gap-3 mt-auto">
+                <a
+                  href="https://drive.google.com/drive/folders/1xyes9E8nAyCOoZm5HFZFvSrV6vWgrmAw?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-[#ede9e3] hover:text-[#6b8cba] transition-colors duration-200 group/btn"
+                >
+                  View Case Study
+                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
+                    <IconArrow />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
           {/* 05: Academic BBA portfolio management study */}
@@ -467,6 +529,19 @@ export default function Projects() {
                 ].map((t) => (
                   <Tag key={t} label={t} />
                 ))}
+              </div>
+              <div className="flex items-center gap-3 mt-auto">
+                <a
+                  href="https://drive.google.com/drive/folders/1sJPx5ye3wr77GCYrk4Jcx4Gsd6qwRQ6t?usp=drive_link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-sm text-[#ede9e3] hover:text-[#d4955a] transition-colors duration-200 group/btn"
+                >
+                  View Case Study
+                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
+                    <IconArrow />
+                  </span>
+                </a>
               </div>
             </div>
           </div>

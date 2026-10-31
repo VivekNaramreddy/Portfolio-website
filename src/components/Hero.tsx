@@ -42,7 +42,9 @@ export default function Hero() {
               <IconArrow />
             </a>
             <a
-              href="#resume"
+              href="https://drive.google.com/drive/folders/1iPo5yXDHRPUGcm68IWsb95ey6gJXKnlF?usp=drive_link"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#2e2e2b] text-[#ede9e3] text-sm font-medium tracking-wide hover:border-[#4a4a46] hover:bg-[#131312] transition-all duration-200"
             >
               <IconDownload />

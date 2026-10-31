@@ -1,7 +1,9 @@
+import type { ReactNode } from 'react'
+
 type TimelineEntry = {
   period: string
   role: string
-  org: string
+  org: ReactNode
   type: string
   description: string
   tags: string[]
@@ -38,7 +40,14 @@ const education: TimelineEntry[] = [
     period: "2023 – 2025",
     type: "MBA",
     role: "Master of Business Administration",
-    org: "Marketing & Digital Marketing — University of New Haven",
+    org: (
+      <>
+        Marketing & Digital Marketing —{' '}
+        <a href="https://www.newhaven.edu/index.php" target="_blank" rel="noopener noreferrer" className="hover:underline">
+          University of New Haven
+        </a>
+      </>
+    ),
     description:
       "Graduate coursework and applied projects in digital marketing, social media strategy, analytics, finance, and strategic management, including client work with the New Haven Symphony Orchestra and business analysis projects.",
     tags: [
@@ -52,7 +61,11 @@ const education: TimelineEntry[] = [
     period: "2019 – 2022",
     type: "BBA",
     role: "Bachelor of Business Administration",
-    org: "Vel Tech Institute",
+    org: (
+      <a href="https://www.veltech.edu.in/" target="_blank" rel="noopener noreferrer" className="hover:underline">
+        Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology
+      </a>
+    ),
     description:
       "Built a foundation in marketing, management, finance, and business strategy, including an academic portfolio-management study focused on Kotak Securities.",
     tags: [
@@ -77,7 +90,7 @@ function TimelineSection({
     <div className="space-y-16">
       <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-6">
         <p
-          className="text-xs tracking-[0.2em] text-[#4a4a46] uppercase lg:pt-1.5"
+          className="text-sm leading-4 tracking-[0.2em] text-[#8a8a82] uppercase lg:pt-1.5"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           {label}

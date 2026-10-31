@@ -5,7 +5,7 @@ export default function Contact() {
     <section id="contact" className="py-28 px-6 lg:px-10 max-w-6xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-6">
         <p
-          className="text-xs tracking-[0.2em] text-[#4a4a46] uppercase lg:pt-2"
+          className="text-sm leading-4 tracking-[0.2em] text-[#8a8a82] uppercase lg:pt-2"
           style={{ fontFamily: "'JetBrains Mono', monospace" }}
         >
           Contact
@@ -36,7 +36,7 @@ export default function Contact() {
               Send an Email
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/vivek-vardhan-reddy-naramreddy-954347285/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#2e2e2b] text-[#ede9e3] text-sm font-medium tracking-wide hover:border-[#4a4a46] hover:bg-[#131312] transition-all duration-200"
@@ -45,7 +45,7 @@ export default function Contact() {
               LinkedIn
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/VivekNaramreddy"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full border border-[#2e2e2b] text-[#ede9e3] text-sm font-medium tracking-wide hover:border-[#4a4a46] hover:bg-[#131312] transition-all duration-200"

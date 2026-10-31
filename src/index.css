@@ -60,3 +60,41 @@ body {
 .font-mono-label {
   font-family: 'JetBrains Mono', monospace;
 }
+
+/* Shared feedback for links and buttons without changing their layout. */
+:where(a[href], button:not(:disabled)) {
+  cursor: pointer;
+  transition-property: color, background-color, border-color, opacity, filter, translate, scale;
+  transition-duration: 180ms;
+  transition-timing-function: ease-out;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :where(a[href], button:not(:disabled)):hover {
+    filter: brightness(1.18);
+    translate: 0 -2px;
+  }
+}
+
+:where(a[href], button:not(:disabled)):active {
+  scale: 0.96;
+  translate: 0 0;
+  filter: brightness(1.25);
+  transition-duration: 70ms;
+}
+
+:where(a[href], button:not(:disabled)):focus-visible {
+  outline: 2px solid #d4955a;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(a[href], button:not(:disabled)) {
+    transition: none;
+  }
+
+  :where(a[href], button:not(:disabled)):is(:hover, :active) {
+    translate: none;
+    scale: none;
+  }
+}

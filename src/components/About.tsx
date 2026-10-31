@@ -5,7 +5,7 @@ export default function About() {
         {/* Label */}
         <div className="lg:pt-1.5">
           <p
-            className="text-xs tracking-[0.2em] text-[#4a4a46] uppercase"
+            className="text-sm leading-4 tracking-[0.2em] text-[#8a8a82] uppercase"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             About
@@ -23,7 +23,10 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[#7a7a74] leading-relaxed max-w-2xl">
               <p>
-                I'm an MBA graduate in Marketing & Digital Marketing from the University of New Haven.
+                I'm an MBA graduate in Marketing & Digital Marketing from the{' '}
+                <a href="https://www.newhaven.edu/index.php" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                  University of New Haven
+                </a>.
                 My background is in marketing strategy, audience research, analytics, and competitive
                 analysis, and I’ve gradually expanded into automation and building practical tools.
               </p>

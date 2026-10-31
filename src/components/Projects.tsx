@@ -1,9 +1,9 @@
-import { IconArrow, IconGithub } from "./Icons"
 import {
   AnalyticsMockup,
   GMStrategyMockup,
   JobTrackerMockup,
   NHSOMockup,
+  PortfolioStudyMockup,
 } from "./ProjectMockups"
 
 function Tag({ label, light = false }: { label: string light?: boolean }) {
@@ -81,7 +81,7 @@ export default function Projects() {
           </div>
         </div>
 
-        {/* ── 01 PRIMARY: AI Job Application Assistant ─────────────────── */}
+        {/* ── 01 PRIMARY: Job Application Automation ─────────────────── */}
         <div
           className="group rounded-3xl border border-[#1e1e1c] overflow-hidden transition-all duration-500 hover:border-[#2e2e2b]"
           style={{ background: "#111110" }}
@@ -101,7 +101,7 @@ export default function Projects() {
                     className="text-[10px] px-2.5 py-0.5 rounded-full border border-[#d4955a33] text-[#d4955a]"
                     style={{ fontFamily: "'JetBrains Mono', monospace" }}
                   >
-                    In Development
+                    Active Development
                   </span>
                 </div>
 
@@ -113,20 +113,19 @@ export default function Projects() {
                       letterSpacing: "-0.015em",
                     }}
                   >
-                    AI Job Application
+                    Job Application
                     <br />
-                    Assistant
+                    Automation
                   </h3>
                   <p className="text-sm text-[#d4955a] leading-relaxed font-medium">
                     Human-in-the-loop automation for discovering, reviewing,
                     tracking, and managing job applications.
                   </p>
                   <p className="text-sm text-[#7a7a74] leading-relaxed max-w-md">
-                    Built with Python and Playwright, the system streamlines job
-                    discovery and application tracking while keeping the user in
-                    control. It supports review and approval workflows, Easy
-                    Apply and external jobs, applied and rejected tracking,
-                    failure logging, filtering, and spreadsheet export.
+                    Built with Python and Playwright to streamline job discovery and application
+                    tracking while keeping manual review and approval in the workflow. The system
+                    handles Easy Apply and external jobs, application status tracking, failure
+                    logging, filtering, and spreadsheet export.
                   </p>
                 </div>
 
@@ -148,37 +147,15 @@ export default function Projects() {
                   {[
                     "Python",
                     "Playwright",
-                    "Browser Automation",
-                    "LLM / OpenAI",
                     "SQLite",
-                    "CLI",
+                    "Browser Automation",
+                    "Excel Export",
                   ].map((t) => (
                     <Tag key={t} label={t} />
                   ))}
                 </div>
               </div>
 
-              {/* Actions */}
-              <div className="flex flex-wrap items-center gap-3">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-[#d4955a] text-[#0c0c0b] text-sm font-medium tracking-wide hover:bg-[#c8834a] transition-colors duration-200 group/btn"
-                >
-                  View Case Study
-                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
-                    <IconArrow />
-                  </span>
-                </button>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-[#2e2e2b] text-[#7a7a74] text-sm tracking-wide hover:border-[#4a4a46] hover:text-[#ede9e3] transition-all duration-200"
-                >
-                  <IconGithub size={14} />
-                  GitHub
-                </a>
-              </div>
             </div>
 
             {/* Right: dashboard mockup */}
@@ -241,15 +218,14 @@ export default function Projects() {
                   Platform
                 </h3>
                 <p className="text-sm text-[#d4955a] leading-relaxed font-medium">
-                  Transforming public digital signals into clearer competitive
-                  and marketing insights.
+                  Analyzing public digital and social data to understand competitors, content
+                  activity, and engagement patterns.
                 </p>
                 <p className="text-sm text-[#7a7a74] leading-relaxed max-w-md">
-                  An evolving marketing technology project designed to analyze
-                  publicly available social and digital performance data. The
-                  platform aims to compare brands, content activity, engagement
-                  patterns, and competitive signals while turning fragmented
-                  online information into useful insights for marketers.
+                  Currently developing a marketing research tool that organizes publicly available
+                  social and digital performance data for competitor comparison and audience
+                  analysis. The goal is to turn scattered information into structured insights
+                  that are easier to use in marketing decisions.
                 </p>
               </div>
 
@@ -277,26 +253,6 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-3 mt-auto">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-1.5 text-sm text-[#ede9e3] hover:text-[#d4955a] transition-colors duration-200 group/btn"
-                >
-                  Case Study
-                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
-                    <IconArrow />
-                  </span>
-                </button>
-                <a
-                  href="https://github.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm text-[#4a4a46] hover:text-[#ede9e3] transition-colors duration-200"
-                >
-                  <IconGithub size={14} />
-                  GitHub
-                </a>
-              </div>
             </div>
           </div>
 
@@ -339,13 +295,12 @@ export default function Projects() {
                   NHSO Digital Marketing Strategy
                 </h3>
                 <p className="text-sm text-[#a896c8] leading-relaxed font-medium">
-                  Turning audience and content data into an actionable social
-                  media strategy for a real arts organization.
+                  Audience research and digital strategy for the New Haven Symphony Orchestra.
                 </p>
                 <p className="text-sm text-[#7a7a74] leading-relaxed max-w-md">
                   Worked with the New Haven Symphony Orchestra over
                   approximately four months to analyze audience engagement,
-                  competitors, and content performance. Using tools including
+                  competitors, and content performance. Using
                   HubSpot and HypeAuditor, our team developed recommendations
                   for content strategy, community engagement, student outreach,
                   partnerships, and audience growth.
@@ -376,17 +331,6 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-3 mt-auto">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-1.5 text-sm text-[#ede9e3] hover:text-[#a896c8] transition-colors duration-200 group/btn"
-                >
-                  View Case Study
-                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
-                    <IconArrow />
-                  </span>
-                </button>
-              </div>
             </div>
           </div>
 
@@ -429,14 +373,14 @@ export default function Projects() {
                   General Motors Strategic Analysis
                 </h3>
                 <p className="text-sm text-[#6b8cba] leading-relaxed font-medium">
-                  Examining how a global automotive leader can compete through
-                  major industry transformation.
+                  Strategic analysis of General Motors during the transition toward EVs,
+                  sustainability, and autonomous technology.
                 </p>
                 <p className="text-sm text-[#7a7a74] leading-relaxed max-w-md">
                   Analyzed General Motors using PESTEL, Porter’s Five Forces,
                   SWOT, and value-chain frameworks to evaluate competitive
                   pressure, EV adoption, autonomous technology, sustainability,
-                  and changing industry dynamics. The project concluded with
+                  and industry change. The project concluded with
                   strategic recommendations based on GM’s market position and
                   future opportunities.
                 </p>
@@ -465,16 +409,64 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="flex items-center gap-3 mt-auto">
-                <button
-                  type="button"
-                  className="inline-flex items-center gap-1.5 text-sm text-[#ede9e3] hover:text-[#6b8cba] transition-colors duration-200 group/btn"
-                >
-                  View Case Study
-                  <span className="group-hover/btn:translate-x-0.5 transition-transform duration-200">
-                    <IconArrow />
+            </div>
+          </div>
+          {/* 05: Academic BBA portfolio management study */}
+          <div
+            className="group rounded-3xl border border-[#1e1e1c] overflow-hidden flex flex-col transition-all duration-500 hover:border-[#2e2e2b]"
+            style={{ background: "#111110" }}
+          >
+            <div className="h-52 border-b border-[#1a1a18] overflow-hidden relative">
+              <div className="absolute inset-0 group-hover:scale-[1.02] transition-transform duration-700 origin-center">
+                <PortfolioStudyMockup />
+              </div>
+            </div>
+            <div className="p-7 flex flex-col gap-5 flex-1">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs tracking-[0.2em] text-[#4a4a46]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                    05
                   </span>
-                </button>
+                  <span className="text-[10px] px-2 py-0.5 rounded-full border border-[#d4955a33] text-[#d4955a]" style={{ fontFamily: "'JetBrains Mono', monospace" }}>
+                    Academic Project
+                  </span>
+                </div>
+                <h3
+                  className="text-xl font-light text-[#ede9e3] leading-snug"
+                  style={{ fontFamily: "'Fraunces', Georgia, serif", letterSpacing: "-0.01em" }}
+                >
+                  Kotak Securities Portfolio Management Study
+                </h3>
+                <p className="text-sm text-[#d4955a] leading-relaxed font-medium">
+                  Studying portfolio management strategies, asset allocation, and large-cap equity selection.
+                </p>
+                <p className="text-sm text-[#7a7a74] leading-relaxed max-w-md">
+                  Studied portfolio management services with a focus on Kotak Securities, examining
+                  portfolio construction, investment strategy, risk and return considerations, and
+                  large-cap equity allocation. The project helped build my foundation in investment
+                  analysis and portfolio management during my BBA.
+                </p>
+              </div>
+              <KeyCapabilities
+                accent="#d4955a"
+                items={[
+                  "Portfolio Analysis",
+                  "Asset Allocation",
+                  "Risk & Return Analysis",
+                  "Equity Research",
+                  "Investment Strategy",
+                  "Large-Cap Analysis",
+                ]}
+              />
+              <div className="flex flex-wrap gap-1.5">
+                {[
+                  "Portfolio Management",
+                  "Equity Research",
+                  "Asset Allocation",
+                  "Financial Analysis",
+                ].map((t) => (
+                  <Tag key={t} label={t} />
+                ))}
               </div>
             </div>
           </div>

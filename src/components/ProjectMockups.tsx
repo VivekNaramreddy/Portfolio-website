@@ -1,3 +1,47 @@
+// Academic study summary using the existing report-style visual system.
+export function PortfolioStudyMockup() {
+  const topics = [
+    { label: "ALLOCATION", detail: "Portfolio construction", color: "#d4955a" },
+    { label: "RISK & RETURN", detail: "Investment considerations", color: "#6b8cba" },
+    { label: "EQUITY RESEARCH", detail: "Large-cap selection", color: "#a896c8" },
+    { label: "STRATEGY", detail: "Portfolio management", color: "#6dab8e" },
+  ]
+  return (
+    <div
+      className="w-full h-full flex flex-col gap-4 p-5 select-none"
+      style={{ background: "#0a0a09", fontFamily: "'JetBrains Mono', monospace" }}
+    >
+      <div className="flex items-center justify-between gap-2">
+        <div>
+          <div className="text-[8px] text-[#ede9e3] tracking-wider">PORTFOLIO MANAGEMENT</div>
+          <div className="text-[7px] text-[#4a4a46]">Kotak Securities study</div>
+        </div>
+        <span className="text-[7px] text-[#d4955a] border border-[#d4955a33] px-2 py-0.5 rounded-full">
+          BBA Academic Study
+        </span>
+      </div>
+      <div className="grid grid-cols-2 gap-2 flex-1">
+        {topics.map(({ label, detail, color }) => (
+          <div
+            key={label}
+            className="rounded-lg border border-[#1a1a18] p-3 flex flex-col justify-between"
+            style={{ background: "#111110" }}
+          >
+            <div className="w-1.5 h-1.5 rounded-full" style={{ background: color }} />
+            <div>
+              <div className="text-[8px] tracking-wider" style={{ color }}>{label}</div>
+              <div className="text-[7px] text-[#4a4a46]">{detail}</div>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="pt-2 border-t border-[#1a1a18] text-[7px] text-[#4a4a46]">
+        Investment analysis · Academic research
+      </div>
+    </div>
+  )
+}
+
 export function JobTrackerMockup() {
   const jobs = [
     {
@@ -196,7 +240,7 @@ export function AnalyticsMockup() {
           MARKETING INTELLIGENCE
         </span>
         <span className="text-[7px] text-[#d4955a] border border-[#d4955a33] px-2 py-0.5 rounded-full">
-          Live
+          Prototype
         </span>
       </div>
 

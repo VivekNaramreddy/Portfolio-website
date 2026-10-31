@@ -23,14 +23,15 @@ export default function About() {
             </h2>
             <div className="space-y-4 text-[#7a7a74] leading-relaxed max-w-2xl">
               <p>
-                I’m an MBA graduate in Marketing & Digital Marketing from the University of New Haven,
-                working at the intersection of strategy, analytics, technology, and automation. I use data
-                to understand problems, then turn those insights into practical projects and tools.
+                I'm an MBA graduate in Marketing & Digital Marketing from the University of New Haven.
+                My background is in marketing strategy, audience research, analytics, and competitive
+                analysis, and I’ve gradually expanded into automation and building practical tools.
               </p>
               <p>
-                My work spans digital marketing strategy, audience research, competitive analysis, workflow
-                automation, and AI-assisted product building. I’m most interested in work where business
-                thinking and technology come together to create something genuinely useful.
+                Most of my work starts with a problem I want to understand better — whether that means
+                researching an audience, analyzing competitors, planning a digital strategy, or building
+                a workflow that saves time. I’m especially interested in roles where marketing, analytics,
+                and technology can be used together in a practical way.
               </p>
             </div>
           </div>
@@ -44,7 +45,7 @@ export default function About() {
                 value: 'Marketing + Analytics',
                 sub: 'Strategy, research, and data-driven decision making',
               },
-              { label: 'Approach', value: 'Builder Mindset', sub: 'Understand, test, build, refine' },
+              { label: 'Approach', value: 'Practical Problem Solving', sub: 'Research, test, build, improve' },
             ].map(({ label, value, sub }) => (
               <div key={label} className="border border-[#1e1e1c] rounded-2xl p-5 space-y-1 hover:border-[#2e2e2b] transition-colors duration-300">
                 <p

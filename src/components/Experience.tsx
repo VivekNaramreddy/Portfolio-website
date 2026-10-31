@@ -9,12 +9,12 @@ type TimelineEntry = {
 
 const experience: TimelineEntry[] = [
   {
-    period: "2026 – Present",
-    type: "Personal Projects",
-    role: "Independent Builder — Marketing & Automation Projects",
+    period: "Sep 2026 – Present",
+    type: "PERSONAL PROJECTS",
+    role: "Independent Projects — Marketing & Automation",
     org: "Software Projects",
     description:
-      "Building practical tools at the intersection of marketing, automation, and AI-assisted development, including a human-in-the-loop job application assistant and a marketing intelligence platform.",
+      "Building practical marketing and automation projects, including a human-in-the-loop job application workflow and a marketing intelligence platform. The work has given me hands-on experience with Python, Playwright, workflow automation, and AI-assisted development.",
     tags: [
       "Python",
       "Playwright",
@@ -23,12 +23,12 @@ const experience: TimelineEntry[] = [
     ],
   },
   {
-    period: "2024",
+    period: "Sep 2024 – Dec 2024",
     type: "Client Project",
     role: "Digital Marketing Strategy",
     org: "New Haven Symphony Orchestra",
     description:
-      "Worked with the New Haven Symphony Orchestra to analyze audience engagement, competitors, and content performance and translate those findings into social media, outreach, partnership, and audience-growth recommendations.",
+      "Worked with the New Haven Symphony Orchestra to analyze audience engagement, competitors, and content performance, then use those findings to develop recommendations for social media, outreach, partnerships, and audience growth.",
     tags: ["Digital Marketing", "Audience Research", "HubSpot", "HypeAuditor"],
   },
 ]
@@ -40,11 +40,11 @@ const education: TimelineEntry[] = [
     role: "Master of Business Administration",
     org: "Marketing & Digital Marketing — University of New Haven",
     description:
-      "Graduate study focused on digital marketing strategy, marketing research, analytics, consumer insights, and strategic management, supported by applied client and business projects.",
+      "Graduate coursework and applied projects in digital marketing, social media strategy, analytics, finance, and strategic management, including client work with the New Haven Symphony Orchestra and business analysis projects.",
     tags: [
       "Digital Marketing Strategy",
-      "Marketing Research",
-      "Business Analytics",
+      "Social Media Marketing",
+      "Data Visualization",
       "Strategic Management",
     ],
   },
@@ -54,12 +54,12 @@ const education: TimelineEntry[] = [
     role: "Bachelor of Business Administration",
     org: "Vel Tech Institute",
     description:
-      "Undergraduate business education covering marketing, management, business fundamentals, and applied coursework that formed the foundation for later graduate study.",
+      "Built a foundation in marketing, management, finance, and business strategy, including an academic portfolio-management study focused on Kotak Securities.",
     tags: [
       "Business Administration",
       "Marketing",
-      "Management",
-      "Business Fundamentals",
+      "Finance",
+      "Portfolio Management",
     ],
   },
 ]

@@ -1,7 +1,7 @@
 export default function HeroVisual() {
   return (
     <div className="relative w-full h-full flex items-center justify-center select-none" aria-hidden>
-      <svg viewBox="0 0 480 480" className="w-full max-w-[440px] opacity-90" fill="none">
+      <svg viewBox="0 0 480 480" className="w-full max-w-[440px] opacity-95" fill="none">
         {/* Outer ring */}
         <circle cx="240" cy="240" r="200" stroke="#222220" strokeWidth="1" />
         <circle cx="240" cy="240" r="148" stroke="#2a2a28" strokeWidth="1" strokeDasharray="4 8" />

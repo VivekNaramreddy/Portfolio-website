@@ -16,20 +16,20 @@ export default function Contact() {
               className="font-display text-4xl md:text-5xl font-light text-[#ede9e3] leading-snug"
               style={{ fontFamily: "'Fraunces', Georgia, serif", letterSpacing: '-0.02em' }}
             >
-              Let's build something
+              Let's work on something
               <br />
-              <em className="text-[#d4955a] not-italic">valuable.</em>
+              <em className="text-[#d4955a] not-italic">useful.</em>
             </h2>
             <p className="text-[#7a7a74] leading-relaxed max-w-lg">
-              Open to roles in marketing analytics, digital strategy, and product-adjacent positions.
-              Always interested in interesting problems.
+              Open to roles in marketing analytics, digital strategy, and technology-enabled marketing.
+              I’m especially interested in work involving research, automation, analytics, and practical problem solving.
             </p>
           </div>
 
           {/* Links */}
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:vivek@example.com"
+              href="mailto:viveknaramreddy@gmail.com"
               className="inline-flex items-center gap-2.5 px-6 py-3 rounded-full bg-[#d4955a] text-[#0c0c0b] text-sm font-medium tracking-wide hover:bg-[#c8834a] transition-colors duration-200"
             >
               <IconEmail size={15} />
@@ -57,7 +57,7 @@ export default function Contact() {
 
           {/* Email display */}
           <p
-            className="text-sm text-[#4a4a46] tracking-wide"
+            className="text-sm text-[#7a7a74] tracking-wide"
             style={{ fontFamily: "'JetBrains Mono', monospace" }}
           >
             viveknaramreddy@gmail.com

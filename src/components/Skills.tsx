@@ -19,8 +19,8 @@ const skillGroups = [
       'Market Research',
       'Performance Reporting',
       'Survey Design',
-      'Power BI',
       'Excel',
+      'Power BI',
     ],
   },
   {
@@ -29,11 +29,10 @@ const skillGroups = [
       'Python',
       'Playwright',
       'Git / GitHub',
-      'AI-Assisted Development',
       'Workflow Automation',
       'Browser Automation',
-      'Tool Building',
-      'Human-in-the-Loop Systems',
+      'Automation Tools',
+      'AI-Assisted Development',
     ],
   },
   {
@@ -49,6 +48,7 @@ const skillGroups = [
       'Google Analytics',
       'HubSpot',
       'HypeAuditor',
+      'Linux',
     ],
   },
 ]
